@@ -12,11 +12,56 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-color: 29, 29, 29;
+    --theme-color: 254, 45, 84;
   }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*::after::before {
+  box-sizing: inherit;
 }
 
 body {
   margin: 0;
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-color));
+}
+
+.playlistTracks {
+  counter-reset: counter-tn;
+}
+
+.counterClass::before {
+  counter-increment: counter-tn;
+  content: counter(counter-tn) ". ";
+  width: 35px;
+}
+
+
+
+
+.nestable-drag-layer>.nestable-list {
+  margin: 10px !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--foreground-rgb));
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--theme-color));
 }

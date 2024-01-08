@@ -1,10 +1,10 @@
 import { FaCirclePlay } from 'react-icons/fa6';
-
-export default function IndexPage() {
+ 
+export default function HomeComponent() {
     return (
 
 
-        <section className="h-[100%] w-[85%] bg-panels rounded-xl ml-2 flex flex-col overflow-auto flex-nowrap z-[-2]">
+        <section className="h-[100%] w-[85%] bg-panels rounded-xl ml-2 flex flex-col flex-nowrap z-[-2] overflow-hidden">
             <div className='w-full h-[20%] relative'>
                 <img
                     src="./images/background.png"
@@ -28,9 +28,8 @@ export default function IndexPage() {
                         <div className='w-1 h-30 rounded-full bg-primary'></div>
                         <div className='flex flex-col my-3'>
                             <h2 className='text-xl font-medium'>Tocado recentemente</h2>
-                            <div className='flex flex-row flex-nowrap justify-center items-center w-fit h-full mt-3'>
-                                <div className='w-40 h-40'>
-
+                            <div className='flex flex-row flex-nowrap justify-left items-center w-[80vw] h-full mt-3 gap-5 overflow-y-hidden shrink-1'>
+                                <div className='w-40 h-40 min-w-[160px]'>
                                     <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/a/3/2/4/482541454678872.jpg" className='w-full h-full rounded-xl'></img>
                                     <FaCirclePlay
                                         className="relative inline-flex left-[50%] top-[-80%] translate-x-[-50%] translate-y-[50%] z-[12]"
@@ -40,6 +39,27 @@ export default function IndexPage() {
                                     <div className='h-40 w-40 absolute bg-gradient-to-t from-panels to-transparent z-[11] bottom-[22.5%]'></div>
                                     <p className='font-medium w-[90%] h-[15%] relative text-sm bottom-[50%] text-ellipsis line-clamp-1 overflow-hidden text-center left-[50%] translate-x-[-50%] z-[12]'>Death of a Bachelor</p>
                                 </div>
+                                <div className='w-40 h-40 min-w-[160px]'>
+                                    <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/a/3/2/4/482541454678872.jpg" className='w-full h-full rounded-xl'></img>
+                                    <FaCirclePlay
+                                        className="relative inline-flex left-[50%] top-[-80%] translate-x-[-50%] translate-y-[50%] z-[12]"
+                                        size={50}
+                                        style={{ fill: "#FE2D54" }}
+                                    />
+                                    <div className='h-40 w-40 absolute bg-gradient-to-t from-panels to-transparent z-[11] bottom-[22.5%]'></div>
+                                    <p className='font-medium w-[90%] h-[15%] relative text-sm bottom-[50%] text-ellipsis line-clamp-1 overflow-hidden text-center left-[50%] translate-x-[-50%] z-[12]'>Death of a Bachelor</p>
+                                </div>
+                                <div className='w-40 h-40 min-w-[160px]'>
+                                    <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/a/3/2/4/482541454678872.jpg" className='w-full h-full rounded-xl'></img>
+                                    <FaCirclePlay
+                                        className="relative inline-flex left-[50%] top-[-80%] translate-x-[-50%] translate-y-[50%] z-[12]"
+                                        size={50}
+                                        style={{ fill: "#FE2D54" }}
+                                    />
+                                    <div className='h-40 w-40 absolute bg-gradient-to-t from-panels to-transparent z-[11] bottom-[22.5%]'></div>
+                                    <p className='font-medium w-[90%] h-[15%] relative text-sm bottom-[50%] text-ellipsis line-clamp-1 overflow-hidden text-center left-[50%] translate-x-[-50%] z-[12]'>Death of a Bachelor</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import { HiVolumeUp } from 'react-icons/hi'
 
 export function Player() {
     return (
-        <footer className="w-[98.5%] h-[10%] mt-2 mb-[.5%] p-3 items-center rounded-xl bg-panels flex flex-row flex-nowrap">
+        <footer className="w-full h-[10%] p-3 items-center rounded-xl bg-panels flex flex-row flex-nowrap">
             <div className="flex row w-[25%] items-center">
                 <img className="w-[15%] h-[15%] object-cover rounded-lg" src="https://akamai.sscdn.co/uploadfile/letras/albuns/a/3/2/4/482541454678872.jpg" alt="Track Image" />
                 <div className="flex flex-col ml-3 justify-center">
